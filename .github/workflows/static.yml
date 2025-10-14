@@ -55,7 +55,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # AQUI está a mudança CLAVE: carrega APENAS a pasta de build
-          path: './build' 
+          path: './dist' 
           
       - name: Deploy to GitHub Pages
         id: deployment
