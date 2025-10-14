@@ -51,7 +51,7 @@ const Hero = () => {
               size="lg"
               className="min-w-[200px] bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary backdrop-blur-sm"
             >
-              Nossos Serviços
+              Os Nossos Serviços
             </Button>
           </div>
         </div>

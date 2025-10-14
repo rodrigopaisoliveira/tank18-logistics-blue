@@ -8,37 +8,37 @@ const services = [
   {
     icon: Flame,
     title: "Aquecimento de Contentores-Tanque",
-    description: "Sistemas de aquecimento eficientes e seguros para manutenção da temperatura ideal dos seus contentores.",
+    description: "Sistemas de aquecimento eficientes e seguros para manutenção da temperatura ideal dos seus contentores. Garantimos o acondicionamento perfeito do produto para a próxima fase logística.",
     image: heatingImage,
   },
   {
     icon: Warehouse,
-    title: "Armazenamento Seguro",
-    description: "Infraestrutura moderna para armazenamento de contentores-tanque com total segurança e rastreabilidade.",
+    title: "Armazenamento e Estacionamento Seguro",
+    description: "Infraestrutura moderna para armazenamento/estacionamento seguro de contentores de 20, 30 e 40 pés, carregados ou vazios. Oferecemos total segurança e rastreabilidade na nossa localização estratégica em Santa Iria de Azóia.",
     image: storageImage,
   },
   {
     icon: Container,
-    title: "Instalação de Flexitanks",
-    description: "Instalação profissional de flexitanks com equipamentos de última geração e equipe especializada.",
+    title: "Instalação e Remoção de Flexitanks",
+    description: "Serviço profissional de instalação e remoção de flexitanks. Contamos com equipa especializada e equipamentos de última geração para garantir a máxima fiabilidade no manuseamento de líquidos a granel.",
     image: flexitankImage,
   },
   {
     icon: Wrench,
-    title: "Manutenção Técnica",
-    description: "Serviços completos de manutenção preventiva e corretiva para seus equipamentos.",
+    title: "Manutenção Técnica e Reparação",
+    description: "Serviços completos de manutenção preventiva e corretiva para os seus equipamentos. Inclui Reparação de contentores e contentores-tanque, Teste de pressão para deteção de fugas e Inspeções periódicas de 2,5 e 5 anos.",
     image: null,
   },
   {
     icon: Truck,
     title: "Logística Especializada",
-    description: "Soluções logísticas customizadas para transporte e movimentação de contentores-tanque.",
+    description: "Soluções logísticas customizadas para transporte e movimentação de contentores-tanque. Forte foco na eficiência, segurança e fiabilidade, adaptando-nos às suas necessidades específicas.",
     image: null,
   },
   {
     icon: Settings,
     title: "Aluguer de Equipamentos",
-    description: "Disponibilizamos equipamentos de qualidade para locação, com preços personalizados.",
+    description: "Disponibilizamos equipamentos de qualidade para locação, com preços personalizados. A nossa oferta inclui: Unidade móvel de recuperação de gás, Guarda-corpos de segurança móveis e Mangueiras de descarga.",
     image: null,
   },
 ];
@@ -49,11 +49,11 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Nossos Serviços
+            Os Nossos Serviços
           </h2>
           <p className="text-lg text-muted-foreground">
             Oferecemos soluções completas e personalizadas para contentores-tanque, 
-            com preços adaptados às suas necessidades específicas.
+            com forte foco na eficiência, segurança e fiabilidade. **Preços sob consulta.**
           </p>
         </div>
 
@@ -70,6 +70,7 @@ const Services = () => {
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
                   <div className="absolute bottom-4 left-4">
@@ -102,7 +103,8 @@ const Services = () => {
           </p>
           <p className="text-muted-foreground">
             Cada serviço é adaptado às necessidades específicas do cliente. 
-            Entre em contato para um orçamento personalizado.
+            A TANK18 garante soluções rápidas, seguras e adaptadas aos nossos parceiros. 
+            Entre em contacto para um orçamento personalizado.
           </p>
         </div>
       </div>

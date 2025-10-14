@@ -49,7 +49,7 @@ const Footer = () => {
                   href="#contact" 
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  Contato
+                  Contacto
                 </a>
               </li>
             </ul>
@@ -57,14 +57,19 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contato</h4>
+            <h4 className="text-lg font-semibold mb-4">Contacto</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span className="text-primary-foreground/80">
+                <a
+                  href="https://www.google.com/maps?q=Estrada+Nacional+10+KM+11,+Edif%C3%ADcio+TANK18,+2690-361+Santa+Iria+de+Az%C3%B3ia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Estrada Nacional 10 KM 11, Edifício TANK18<br />
                   2690-361 Santa Iria de Azóia
-                </span>
+                </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 flex-shrink-0" />

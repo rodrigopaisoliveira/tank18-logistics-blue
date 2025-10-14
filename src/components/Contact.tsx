@@ -29,16 +29,17 @@ const Contact = () => {
       return;
     }
 
-    // Send email via mailto (simple solution)
+    // Construct mailto link with form data
     const mailtoLink = `mailto:tank18lda@gmail.com?subject=Contato de ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(
-      `Nome: ${formData.name}\nE-mail: ${formData.email}\nTelefone: ${formData.phone}\n\nMensagem:\n${formData.message}`
+      `Nome: ${formData.name}\nE-mail: ${formData.email}\nTelefone: ${formData.phone || "Não fornecido"}\n\nMensagem:\n${formData.message}`
     )}`;
-    
+
+    // Open the user's default email client with the mailto link
     window.location.href = mailtoLink;
 
     toast({
       title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve.",
+      description: "Entraremos em contacto em breve.",
     });
 
     // Reset form
@@ -50,7 +51,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Entre em Contato
+            Entre em Contacto
           </h2>
           <p className="text-lg text-muted-foreground">
             Estamos prontos para atender suas necessidades. Solicite um orçamento personalizado.
@@ -68,11 +69,16 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Endereço</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <a
+                      href="https://www.google.com/maps?q=Estrada+Nacional+10+KM+11,+Edif%C3%ADcio+TANK18,+2690-361+Santa+Iria+de+Az%C3%B3ia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
                       Estrada Nacional 10 KM 11<br />
                       Edifício TANK18<br />
                       2690-361 Santa Iria de Azóia
-                    </p>
+                    </a>
                   </div>
                 </div>
               </CardContent>
@@ -126,7 +132,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-foreground mb-1">Horário</h3>
                     <p className="text-sm text-muted-foreground">
                       Segunda a Sexta: 9h - 18h<br />
-                      Sábado: Sob consulta
+                      Sábado e Domingo: Fechado
                     </p>
                   </div>
                 </div>
@@ -146,7 +152,7 @@ const Contact = () => {
                       </Label>
                       <Input
                         id="name"
-                        placeholder="Seu nome"
+                        placeholder="Nome Completo"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         required
@@ -159,7 +165,7 @@ const Contact = () => {
                       <Input
                         id="email"
                         type="email"
-                        placeholder="seu@email.com"
+                        placeholder="joao@gmail.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         required
@@ -184,7 +190,7 @@ const Contact = () => {
                     </Label>
                     <Textarea
                       id="message"
-                      placeholder="Descreva suas necessidades ou solicite um orçamento..."
+                      placeholder="Descreva as suas necessidades ou solicite um orçamento."
                       rows={6}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -193,7 +199,7 @@ const Contact = () => {
                   </div>
 
                   <Button type="submit" size="lg" className="w-full md:w-auto">
-                    Enviar Mensagem
+                    Solicitar Orçamento
                   </Button>
                 </form>
               </CardContent>

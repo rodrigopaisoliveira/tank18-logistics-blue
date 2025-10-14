@@ -9,7 +9,7 @@ const features = [
   },
   {
     icon: Users,
-    title: "Equipe Experiente",
+    title: "Equipa Experiente",
     description: "Profissionais altamente qualificados e com vasta experiência no setor.",
   },
   {
@@ -42,10 +42,10 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card className="shadow-card border-border/50">
               <CardContent className="pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Nossa Missão</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">A Nossa Missão</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Proporcionar soluções técnicas e logísticas de excelência para contentores-tanque, 
-                  garantindo eficiência, segurança e confiabilidade em cada operação. Nosso compromisso 
+                  garantindo eficiência, segurança e confiabilidade em cada operação. O nosso compromisso 
                   é superar as expectativas dos clientes através de um atendimento personalizado e 
                   serviços de alta qualidade.
                 </p>
@@ -54,10 +54,10 @@ const About = () => {
 
             <Card className="shadow-card border-border/50">
               <CardContent className="pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Nossa Localização</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">A Nossa Localização</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Estrategicamente localizada na Estrada Nacional 10, KM 11, em Santa Iria de Azóia, 
-                  nossa infraestrutura moderna está preparada para atender suas necessidades logísticas 
+                  a nossa infraestrutura moderna está preparada para atender as suas necessidades logísticas 
                   com agilidade e profissionalismo.
                 </p>
                 <p className="text-sm text-muted-foreground">
