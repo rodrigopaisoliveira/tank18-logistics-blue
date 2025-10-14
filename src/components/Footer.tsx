@@ -1,0 +1,106 @@
+import { Phone, Mail, MapPin } from "lucide-react";
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          {/* Company Info */}
+          <div>
+            <h3 className="text-2xl font-bold mb-4">TANK18 LDA</h3>
+            <p className="text-primary-foreground/80 text-sm leading-relaxed">
+              Especialistas em serviços técnicos e logísticos para contentores-tanque. 
+              Qualidade, segurança e eficiência em cada operação.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a 
+                  href="#home" 
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#services" 
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Serviços
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#about" 
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Sobre Nós
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#contact" 
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Contato</h4>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start space-x-3">
+                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                <span className="text-primary-foreground/80">
+                  Estrada Nacional 10 KM 11, Edifício TANK18<br />
+                  2690-361 Santa Iria de Azóia
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Phone className="w-4 h-4 flex-shrink-0" />
+                <div className="text-primary-foreground/80">
+                  <a href="tel:218310595" className="hover:text-primary-foreground transition-colors">
+                    218 310 595
+                  </a>
+                  {" / "}
+                  <a href="tel:919460684" className="hover:text-primary-foreground transition-colors">
+                    919 460 684
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Mail className="w-4 h-4 flex-shrink-0" />
+                <a 
+                  href="mailto:tank18lda@gmail.com" 
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors break-all"
+                >
+                  tank18lda@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-primary-foreground/20 pt-8">
+          <div className="text-center text-sm text-primary-foreground/60">
+            <p>
+              © {currentYear} TANK18 LDA. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
