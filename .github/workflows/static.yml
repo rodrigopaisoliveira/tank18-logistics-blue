@@ -1,22 +1,17 @@
-# Simple workflow for deploying a React app to GitHub Pages
+# Simple workflow for deploying a React app (Vite) to GitHub Pages
 
 name: Deploy React App to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -28,33 +23,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      # 1. Setup Node.js
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Use uma versão LTS estável
-          cache: 'npm' # Habilita o cache para o npm
+          node-version: '20'
+          cache: 'npm'
 
-      # 2. Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # 3. Build the project (This creates the 'build' folder)
       - name: Build project
         run: npm run build
 
-      # 4. Setup Pages (Configures the build output directory)
+      # 4. Setup Pages (REMOVIDAS AS LINHAS DE CONFIGURAÇÃO QUE CAUSAVAM O ERRO)
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # Define a pasta onde o React compila o output (geralmente 'build')
-          static_site_generator: custom
           
-      # 5. Upload the compiled artifact
+      # 5. Upload the compiled artifact (Onde definimos a pasta 'dist')
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # AQUI está a mudança CLAVE: carrega APENAS a pasta de build
+          # Usamos 'dist' (a saída do Vite)
           path: './dist' 
           
       - name: Deploy to GitHub Pages
