@@ -101,7 +101,7 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex items-center space-x-4 mt-4 md:justify-start justify-center">
               <a
-                href="https://www.facebook.com/tank18lda" // substitui pelo link real se for diferente
+                href="https://www.facebook.com/TRANSPORTESCGL/" // substitui pelo link real se for diferente
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -111,7 +111,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/tank18lda" // substitui pelo link real se for diferente
+                href="https://www.instagram.com/cglgroup.pt/" // substitui pelo link real se for diferente
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
