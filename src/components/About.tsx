@@ -52,22 +52,42 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-card border-border/50">
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">A Nossa Localização</h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Estrategicamente localizada na Estrada Nacional 10, KM 11, em Santa Iria de Azóia, 
-                  a nossa infraestrutura moderna está preparada para atender as suas necessidades logísticas 
-                  com agilidade e profissionalismo.
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Endereço:</strong><br />
-                  Estrada Nacional 10 KM 11<br />
-                  Edifício TANK18<br />
-                  2690-361 Santa Iria de Azóia
-                </p>
-              </CardContent>
-            </Card>
+<a
+  href="https://www.google.com/maps/place/Estrada+Nacional+10+KM+11,+2690-361+Santa+Iria+de+Azóia"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block hover:shadow-lg transition-shadow duration-300"
+>
+<Card className="shadow-card border-border/50">
+  <CardContent className="pt-6">
+    <h3 className="text-xl font-semibold text-foreground mb-4">
+      A Nossa Localização
+    </h3>
+    <p className="text-muted-foreground leading-relaxed mb-4">
+      Estrategicamente localizada na Estrada Nacional 10, KM 11, em Santa Iria de Azóia, 
+      a nossa infraestrutura moderna está preparada para atender as suas necessidades logísticas 
+      com agilidade e profissionalismo.
+    </p>
+    <p className="text-sm text-muted-foreground">
+      <strong className="text-foreground">Endereço:</strong><br />
+      <a
+        href="https://www.google.com/maps/place/Estrada+Nacional+10+KM+11,+2690-361+Santa+Iria+de+Azóia"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-muted-foreground no-underline hover:no-underline cursor-pointer"
+        style={{ textDecoration: 'none', color: 'inherit' }}
+      >
+        Estrada Nacional 10 KM 11<br />
+        Edifício TANK18<br />
+        2690-361 Santa Iria de Azóia
+      </a>
+    </p>
+  </CardContent>
+</Card>
+
+
+          </a>
+
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
