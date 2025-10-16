@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,9 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">TANK18 LDA</h3>
+            <img
+              src={`${import.meta.env.BASE_URL}logo.png`}
+              alt="TANK18 Logo"
+              className="h-12 w-auto mb-4"
+            />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Especialistas em serviços técnicos e logísticos para contentores-tanque. 
+              Especialistas em serviços técnicos e logísticos para contentores-tank. 
               Qualidade, segurança e eficiência em cada operação.
             </p>
           </div>
@@ -58,7 +62,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm mb-6">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <a
@@ -93,14 +97,36 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+
+            {/* Social Media */}
+            <div className="flex items-center space-x-4 mt-4 md:justify-start justify-center">
+              <a
+                href="https://www.facebook.com/tank18lda" // substitui pelo link real se for diferente
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/tank18lda" // substitui pelo link real se for diferente
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
 
+        {/* Bottom line */}
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="text-center text-sm text-primary-foreground/60">
-            <p>
-              © {currentYear} TANK18 LDA. Todos os direitos reservados.
-            </p>
+            <p>© {currentYear} TANK18 LDA. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>

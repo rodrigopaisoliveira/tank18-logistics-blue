@@ -16,35 +16,51 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Basic validation
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Campos obrigatórios",
-        description: "Por favor, preencha todos os campos obrigatórios.",
-        variant: "destructive",
-      });
-      return;
-    }
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
 
-    // Construct mailto link with form data
-    const mailtoLink = `mailto:tank18lda@gmail.com?subject=Contato de ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(
-      `Nome: ${formData.name}\nE-mail: ${formData.email}\nTelefone: ${formData.phone || "Não fornecido"}\n\nMensagem:\n${formData.message}`
-    )}`;
-
-    // Open the user's default email client with the mailto link
-    window.location.href = mailtoLink;
-
+  // Validação simples
+  if (!formData.name || !formData.email || !formData.message) {
     toast({
-      title: "Mensagem enviada!",
-      description: "Entraremos em contacto em breve.",
+      title: "Campos obrigatórios",
+      description: "Por favor, preencha todos os campos obrigatórios.",
+      variant: "destructive",
     });
+    return;
+  }
 
-    // Reset form
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
+  // Cria o corpo do e-mail formatado
+  const emailBody = `
+Olá TANK18,
+
+O meu nome é ${formData.name}${formData.phone ? `, proprietário do número ${formData.phone}` : ""}.
+Gostaria de solicitar um orçamento / entrar em contacto.
+
+Mensagem:
+${formData.message}
+
+Melhores cumprimentos,
+${formData.name}
+${formData.email}
+  `;
+
+  // Link mailto formatado
+  const mailtoLink = `mailto:tank18lda@gmail.com?subject=${encodeURIComponent(
+    `Pedido de Orçamento - ${formData.name}`
+  )}&body=${encodeURIComponent(emailBody)}`;
+
+  // Abre o cliente de e-mail
+  window.location.href = mailtoLink;
+
+  toast({
+    title: "A abrir o cliente de e-mail...",
+    description: "Verifique o seu programa de e-mail para enviar a mensagem.",
+  });
+
+  // Limpa o formulário
+  setFormData({ name: "", email: "", phone: "", message: "" });
+};
+
 
   return (
     <section id="contact" className="py-20 bg-secondary">
@@ -54,7 +70,7 @@ const Contact = () => {
             Entre em Contacto
           </h2>
           <p className="text-lg text-muted-foreground">
-            Estamos prontos para atender suas necessidades. Solicite um orçamento personalizado.
+            Estamos prontos para atender as suas necessidades. Solicite um orçamento personalizado.
           </p>
         </div>
 
@@ -122,22 +138,6 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-card border-border/50">
-              <CardContent className="pt-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Horário</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Segunda a Sexta: 9h - 18h<br />
-                      Sábado e Domingo: Fechado
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Contact Form */}

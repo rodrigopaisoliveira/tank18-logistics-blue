@@ -26,12 +26,15 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <button
-              onClick={() => scrollToSection("home")}
-              className="flex items-center space-x-2 focus:outline-none cursor-pointer group"
-              aria-label="Voltar para a Home"
+            onClick={() => scrollToSection("home")}
+            className="flex items-center space-x-2 focus:outline-none cursor-pointer group"
+            aria-label="Voltar para a Home"
           >
-              <div className="text-2xl font-bold text-primary group-hover:opacity-80 transition-opacity">TANK18</div>
-              <div className="text-sm text-muted-foreground hidden md:block group-hover:opacity-80 transition-opacity">LDA</div>
+            <img
+              src={`${import.meta.env.BASE_URL}logo.png`}
+              alt="TANK18 Logo"
+              className="h-10 w-auto group-hover:opacity-80 transition-opacity"
+            />
           </button>
 
           {/* Desktop Navigation */}

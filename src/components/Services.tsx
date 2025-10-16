@@ -7,7 +7,7 @@ import flexitankImage from "@/assets/service-flexitank.jpg";
 const services = [
   {
     icon: Flame,
-    title: "Aquecimento de Contentores-Tanque",
+    title: "Aquecimento de Contentores-tank",
     description: "Sistemas de aquecimento eficientes e seguros para manutenção da temperatura ideal dos seus contentores. Garantimos o acondicionamento perfeito do produto para a próxima fase logística.",
     image: heatingImage,
   },
@@ -26,13 +26,13 @@ const services = [
   {
     icon: Wrench,
     title: "Manutenção Técnica e Reparação",
-    description: "Serviços completos de manutenção preventiva e corretiva para os seus equipamentos. Inclui Reparação de contentores e contentores-tanque, Teste de pressão para deteção de fugas e Inspeções periódicas de 2,5 e 5 anos.",
+    description: "Serviços completos de manutenção preventiva e corretiva para os seus equipamentos. Inclui Reparação de contentores e contentores-tank, Teste de pressão para deteção de fugas e Inspeções periódicas de 2,5 e 5 anos.",
     image: null,
   },
   {
     icon: Truck,
     title: "Logística Especializada",
-    description: "Soluções logísticas customizadas para transporte e movimentação de contentores-tanque. Forte foco na eficiência, segurança e fiabilidade, adaptando-nos às suas necessidades específicas.",
+    description: "Soluções logísticas customizadas para transporte e movimentação de contentores-tank. Forte foco na eficiência, segurança e fiabilidade, adaptando-nos às suas necessidades específicas.",
     image: null,
   },
   {
@@ -52,7 +52,7 @@ const Services = () => {
             Os Nossos Serviços
           </h2>
           <p className="text-lg text-muted-foreground">
-            Oferecemos soluções completas e personalizadas para contentores-tanque, 
+            Oferecemos soluções completas e personalizadas para contentores-tank, 
             com forte foco na eficiência, segurança e fiabilidade. **Preços sob consulta.**
           </p>
         </div>
