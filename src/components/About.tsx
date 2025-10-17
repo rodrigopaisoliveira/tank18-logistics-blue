@@ -35,7 +35,7 @@ const About = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Sediada em Santa Iria de Azóia, Lisboa, a TANK18 LDA é referência em serviços 
-              técnicos e logísticos para contentores-tank.
+              técnicos e logísticos para contentores-Tank.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ const About = () => {
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold text-foreground mb-4">A Nossa Missão</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Proporcionar soluções técnicas e logísticas de excelência para contentores-tank, 
+                  Proporcionar soluções técnicas e logísticas de excelência para contentores-Tank, 
                   garantindo eficiência, segurança e confiabilidade em cada operação. O nosso compromisso 
                   é superar as expectativas dos clientes através de um atendimento personalizado e 
                   serviços de alta qualidade.

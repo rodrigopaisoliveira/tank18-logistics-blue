@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-tank.jpg";
+import heroImage from "@/assets/hero-Tank.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Contentor-tank TANK18"
+          alt="Contentor-Tank TANK18"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary/85 to-primary-dark/95" />
@@ -29,10 +29,10 @@ const Hero = () => {
             TANK18 LDA
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 font-light max-w-3xl mx-auto">
-            Excelência em Serviços Técnicos e Logísticos para Contentores-tank
+            Excelência em Serviços Técnicos e Logísticos para Contentores-Tank
           </p>
           <p className="text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Especialistas em aquecimento, armazenamento e gestão de contentores-tank em Santa Iria de Azóia, Lisboa. 
+            Especialistas em aquecimento, armazenamento e gestão de contentores-Tank em Santa Iria de Azóia, Lisboa. 
             Compromisso com qualidade, segurança e eficiência.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">

@@ -31,7 +31,7 @@ const handleSubmit = (e: React.FormEvent) => {
 
   // Cria o corpo do e-mail formatado
   const emailBody = `
-Olá TANK18,
+Olá Tank18,
 
 O meu nome é ${formData.name}${formData.phone ? `, proprietário do número ${formData.phone}` : ""}.
 Gostaria de solicitar um orçamento / entrar em contacto.
@@ -45,7 +45,7 @@ ${formData.email}
   `;
 
   // Link mailto formatado
-  const mailtoLink = `mailto:tank18lda@gmail.com?subject=${encodeURIComponent(
+  const mailtoLink = `mailto:Tank18lda@gmail.com?subject=${encodeURIComponent(
     `Pedido de Orçamento - ${formData.name}`
   )}&body=${encodeURIComponent(emailBody)}`;
 
@@ -86,7 +86,7 @@ ${formData.email}
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Endereço</h3>
                     <a
-                      href="https://www.google.com/maps?q=Estrada+Nacional+10+KM+11,+Edif%C3%ADcio+TANK18,+2690-361+Santa+Iria+de+Az%C3%B3ia"
+                      href="https://www.google.com/maps?q=Estrada+Nacional+10+KM+11,+Edif%C3%ADcio+Tank18,+2690-361+Santa+Iria+de+Az%C3%B3ia"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -127,10 +127,10 @@ ${formData.email}
                     <h3 className="font-semibold text-foreground mb-1">E-mail</h3>
                     <p className="text-sm text-muted-foreground">
                       <a 
-                        href="mailto:tank18lda@gmail.com" 
+                        href="mailto:Tank18lda@gmail.com" 
                         className="hover:text-primary transition-colors break-all"
                       >
-                        tank18lda@gmail.com
+                        Tank18lda@gmail.com
                       </a>
                     </p>
                   </div>

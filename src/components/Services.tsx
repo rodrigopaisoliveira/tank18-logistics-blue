@@ -2,12 +2,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Flame, Warehouse, Container, Wrench, Truck, Settings } from "lucide-react";
 import heatingImage from "@/assets/service-heating.jpg";
 import storageImage from "@/assets/service-storage.jpg";
-import flexitankImage from "@/assets/service-flexitank.jpg";
+import flexiTankImage from "@/assets/service-flexiTank.jpg";
 
 const services = [
   {
     icon: Flame,
-    title: "Aquecimento de Contentores-tank",
+    title: "Aquecimento de Contentores-Tank",
     description: "Sistemas de aquecimento eficientes e seguros para manutenção da temperatura ideal dos seus contentores. Garantimos o acondicionamento perfeito do produto para a próxima fase logística.",
     image: heatingImage,
   },
@@ -19,20 +19,20 @@ const services = [
   },
   {
     icon: Container,
-    title: "Instalação e Remoção de Flexitanks",
-    description: "Serviço profissional de instalação e remoção de flexitanks. Contamos com equipa especializada e equipamentos de última geração para garantir a máxima fiabilidade no manuseamento de líquidos a granel.",
-    image: flexitankImage,
+    title: "Instalação e Remoção de FlexiTanks",
+    description: "Serviço profissional de instalação e remoção de flexiTanks. Contamos com equipa especializada e equipamentos de última geração para garantir a máxima fiabilidade no manuseamento de líquidos a granel.",
+    image: flexiTankImage,
   },
   {
     icon: Wrench,
-    title: "Manutenção Técnica e Reparação",
-    description: "Serviços completos de manutenção preventiva e corretiva para os seus equipamentos. Inclui Reparação de contentores e contentores-tank, Teste de pressão para deteção de fugas e Inspeções periódicas de 2,5 e 5 anos.",
+    title: "Inspeção e Reparação de Tanks",
+    description: "Serviços especializados de inspeção e reparação de Tanks e contentores-Tank. Inclui testes de pressão para deteção de fugas, manutenção preventiva e corretiva, além de inspeções periódicas de 2,5 e 5 anos.",
     image: null,
   },
   {
     icon: Truck,
     title: "Logística Especializada",
-    description: "Soluções logísticas customizadas para transporte e movimentação de contentores-tank. Forte foco na eficiência, segurança e fiabilidade, adaptando-nos às suas necessidades específicas.",
+    description: "Soluções logísticas customizadas para transporte e movimentação de contentores-Tank. Forte foco na eficiência, segurança e fiabilidade, adaptando-nos às suas necessidades específicas.",
     image: null,
   },
   {
@@ -52,7 +52,7 @@ const Services = () => {
             Os Nossos Serviços
           </h2>
           <p className="text-lg text-muted-foreground">
-            Oferecemos soluções completas e personalizadas para contentores-tank, 
+            Oferecemos soluções completas e personalizadas para contentores-Tank, 
             com forte foco na eficiência, segurança e fiabilidade. **Preços sob consulta.**
           </p>
         </div>

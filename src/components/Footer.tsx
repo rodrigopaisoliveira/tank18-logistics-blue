@@ -11,11 +11,11 @@ const Footer = () => {
           <div>
             <img
               src={`${import.meta.env.BASE_URL}logo.png`}
-              alt="TANK18 Logo"
+              alt="Tank18 Logo"
               className="h-12 w-auto mb-4"
             />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Especialistas em serviços técnicos e logísticos para contentores-tank. 
+              Especialistas em serviços técnicos e logísticos para contentores-Tank. 
               Qualidade, segurança e eficiência em cada operação.
             </p>
           </div>
@@ -66,12 +66,12 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <a
-                  href="https://www.google.com/maps?q=Estrada+Nacional+10+KM+11,+Edif%C3%ADcio+TANK18,+2690-361+Santa+Iria+de+Az%C3%B3ia"
+                  href="https://www.google.com/maps?q=Estrada+Nacional+10+KM+11,+Edif%C3%ADcio+Tank18,+2690-361+Santa+Iria+de+Az%C3%B3ia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  Estrada Nacional 10 KM 11, Edifício TANK18<br />
+                  Estrada Nacional 10 KM 11, Edifício Tank18<br />
                   2690-361 Santa Iria de Azóia
                 </a>
               </li>
@@ -90,10 +90,10 @@ const Footer = () => {
               <li className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 flex-shrink-0" />
                 <a 
-                  href="mailto:tank18lda@gmail.com" 
+                  href="mailto:Tank18lda@gmail.com" 
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors break-all"
                 >
-                  tank18lda@gmail.com
+                  Tank18lda@gmail.com
                 </a>
               </li>
             </ul>
@@ -126,7 +126,7 @@ const Footer = () => {
         {/* Bottom line */}
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="text-center text-sm text-primary-foreground/60">
-            <p>© {currentYear} TANK18 LDA. Todos os direitos reservados.</p>
+            <p>© {currentYear} Tank18 LDA. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>
