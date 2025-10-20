@@ -13,7 +13,7 @@ const services = [
   },
   {
     icon: Warehouse,
-    title: "Armazenamento e Estacionamento Seguro",
+    title: "Parqueamento de Contentores",
     description: "Infraestrutura moderna para armazenamento/estacionamento seguro de contentores de 20, 30 e 40 pés, carregados ou vazios. Oferecemos total segurança e rastreabilidade na nossa localização estratégica em Santa Iria de Azóia.",
     image: storageImage,
   },
