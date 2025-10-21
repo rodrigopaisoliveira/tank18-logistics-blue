@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Flame, Warehouse, Container, Wrench, Truck, Settings } from "lucide-react";
 import heatingImage from "@/assets/service-heating.jpg";
 import storageImage from "@/assets/service-storage.jpg";
-import flexiTankImage from "@/assets/service-flexiTank.jpg";
+import flexiTankImage from "@/assets/service-flexitank.jpg";
 
 const services = [
   {
